@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body{
+  /* background-image: url("/bgblack.png"); */
+  background-color: black;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}
+
+.loading{
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17,25,40,0.9);
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255,0.125);
+  display: flex;
+}
+
+/* Custom scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.8); /* Black with transparency */
+  border-radius: 10px;
+  border: 2px solid transparent; /* Space around thumb */
+  background-clip: content-box;
+}
+
+/* Scrollbar track (the container) */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3); /* Lighter transparent black */
+  border-radius: 10px;
+}
+
+/* Optional: Customize the scrollbar corner (if both scrollbars are visible) */
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* Firefox scrollbar customization */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.3);
+}
